@@ -1,3 +1,20 @@
+commit c2b44319fd6efa3fd7d5b1b026f1c5a5d338f8f6
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Feb 8 11:37:06 2014 -0500
+
+    Version 3.4.21
+    
+    Added back option for external style sheets:
+      Added $CSS_FILE config variable.
+      Added function Load_style_sheet()
+    System_Setup(): trim spaces from $excluded_list values.
+    Table_of_Files(): $excluded_list can now also excludes folders, not just files.
+      (Folders had been explicitly un-excluded, but I don't remember why.)
+    [Edit HTML] button now reads [Edit SOURCE]
+    Page_Title(): added option for ($page == "copyfolder")
+    In Output page contents section, adjusted call to load style sheet.
+    Tweaked a couple css defaults
+
 commit b7e477ed0899ef51535d7141008fbcce7f5cc15f
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Fri Jan 18 23:21:00 2013 -0500
