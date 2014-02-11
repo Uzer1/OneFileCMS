@@ -1,3 +1,28 @@
+commit 75ebbe745f806fd1b2900b7fd566de3790b4bb7a
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Mon Feb 10 21:40:00 2014 -0500
+
+    Mostly changes to prep for sort by column (name, size, or date) feature.
+    
+    Moved 'Select All [x]' from Index_Page() to Table_of_Files(), to table header.
+    Associated style changes for #mcd_submit
+    hte(): now returns raw input if htmlspecialenities returns null.
+    New Language keys:
+      $_['MCD_margin_R'] = '1.0em'; //For [Move] [Copy] [Delete] buttons
+      $_['Name'] = 'Name';
+      $_['Size'] = 'Size';
+      $_['Date'] = 'Date';
+      $_['Source'] = 'Source';  (added in 3.4.21)
+    In ES langauge file: $_['Clear_All'] = 'Limpiar Todos';
+    New js function: format_number(number)  : 1234567 to 1,234,567
+
+commit 9553c8eee1d9ad1b8a4369d0b871d5d4639f6a0f
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Feb 8 14:20:00 2014 -0500
+
+    Version 3.4.21
+    trivial tweak to readme - moved datestamp to top
+
 commit c2b44319fd6efa3fd7d5b1b026f1c5a5d338f8f6
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Sat Feb 8 11:37:06 2014 -0500

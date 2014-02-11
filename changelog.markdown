@@ -1,5 +1,9 @@
 # OneFileCMS Change Log
 
+### v3.4.22 (February 10, 2014)
+
+- Mostly some changes to prep for sort by column (name, size, or date) feature.
+
 ### v3.4.21 (February 8, 2014)
 
 - Added back the option for external style sheets
