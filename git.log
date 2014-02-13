@@ -1,3 +1,35 @@
+commit f331669193860dbd256347e04cb8332bb41c43d4
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Wed Feb 12 19:10:00 2014 -0500
+
+    Version 3.4.23
+    
+    Added a couple new languaged strings.
+
+commit 7bdbc19354484975691f1404d00badf66c092905
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Wed Feb 12 19:00:00 2014 -0500
+
+    Version 3.4.23
+    
+    Continued upadates in prep for sort by column:
+    Directory listing is now built & displayed client side, via javascript.
+      Removed: List_File(), Table_of_Files()
+      Added  : Get_DIRECTORY_DATA(), Create_Table_for_Listing()
+               Index_Page_buttons_top, Index_Page_scripts(), init_ICONS_js()
+      New js : assemble_row(), Display_Directory_Summary(), Build_Directory(),
+               hsc(text) (a basic htmlspecialchars)
+    Added $ICONS['dir'], same as $ICONS['folder']
+    
+    New: $_['files'] = 'Files';  $_['folders'] = 'folders';
+    
+    format_number() now returns instead of document.write'ing
+    FileTimeStamp() can return or document.write its result
+    
+    Some css tweaking...
+    Increased $MAX_EDIT_SIZE from 150,000 to 200,000
+    Increased $UPOLAD_FIELDS from 6 to 10.
+
 commit bd0dfd1fbb5cb46086f72361f6aa3ecd84caf790
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Mon Feb 10 22:00:00 2014 -0500
