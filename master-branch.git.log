@@ -1,3 +1,32 @@
+commit 073cd2114ab4e017dfbb492e3579380ac373e121
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Tue Feb 18 22:40:00 2014 -0500
+
+    Version 3.5
+    Missed a few files in the previous commit.
+
+commit 51e9b16ac635c92e88fc775735a1c0b3655cac0e
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Tue Feb 18 22:20:00 2014 -0500
+
+    Version 3.5
+    Directory list can now be sorted by column: name, size, timestamp, or ext.
+    3.24.23 & 3.4.24 DO NOT WORK IN IE!
+         I don't know why yet, mostly likely js related.
+    New: $_['ext']            = 'ext';  // filename.ext(ension)
+    New: $_['folders_first']  = 'folders first';
+    New text "icons": $ICONS['dir'] = '[+]'; $ICONS['folder'] = '[+]';
+    Index_Page(): get dir list, don't sort server side, but filter . & ..
+    Create_Table_for_Listing(): Added <a>'s & onclicks for sort calls
+    Create_Table_for_Listing(): Also switched from all echo "...", to direct html
+      (except for a few echo's...)
+    Get_DIRECTORY_DATA(): improved determination of $ext.
+    Get_DIRECTORY_DATA(): added DIRECTORY_DATA[x][5] = $ext (for client side sort)
+    Index_Page_scripts(): added a few global js variables for client side sorting.
+                New ()'s: Sort_Folders_First(), sort_DIRECTORY()
+    Display_Directory_Summary(): insert via innerHTML instead of document.write.
+    Added some css for the directory header & footer rows.
+
 commit 8471d094a272a176c343a4f5bbf8d54481d56aef
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Wed Feb 12 20:00:00 2014 -0500
