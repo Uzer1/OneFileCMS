@@ -1,3 +1,27 @@
+commit daee97dfc72f1980cfe1f8dccac69adb1d3b5f08
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Feb 22 17:10:00 2014 -0500
+
+    Version 3.5.01
+    
+    Switched all use of hte() to hsc(). hte() is superfluous with UTF-8.
+    Updated comments about hsc() & hte()
+    On innHTML = <?php echo addslashes($value) ?>, switched addslashes() to hsc().
+    System_Setup(): added function validate_units($cssvalue).  Just because.
+    $_['ext']: changed from just 'ext' to  '.ext';
+    New: $_['folders_first_info']
+    Added hsc() where needed in a few places.
+    New: function Send_data_to_js().  Split out from Index_Page().
+    Get_DIRECTORY_DATA(): check if file_exists() in case of encoding error.
+    Index_Page_scripts(): changed some js CONSTANTS & flags for sort_DIRECTORY().
+    sort_DIRECTORY(): Changed logic. A little more verbose, but seems clearer.
+    In prep for an upcoming bug fix:
+      added $ENC_OS, $ENC_UA, and $CLIENT_OS
+      Also, tagged several places (with //##### ) where file system calls are made.
+      The $filename strings used in the calls may need to be encoded with something
+      other than UTF-8, depending on the underlying OS's filesystem.
+        (such as NTFS, which uses UTF-16)
+
 commit 073cd2114ab4e017dfbb492e3579380ac373e121
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Tue Feb 18 22:40:00 2014 -0500
