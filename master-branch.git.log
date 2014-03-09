@@ -1,3 +1,30 @@
+commit d3befc72a2dddf805380c52b3c3ce0ae9fd86133
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sun Mar 9 12:10:00 2014 -0400
+
+    Version 3.5.05
+    
+    Moved $TO_WARNING from System_Setup to CONFIG section
+    
+    Countdown(): on $timeout_warning, switched back to addslashes() from hsc().
+      When session expires out, also change message_box_contents.
+      Increased delay from session time until login screen load from 3 to 10 sec's.
+    
+    CRM_response(): ignore when "New Name" field is blank - return to CRM_Page().
+    
+    Renamed pre_validate() to pre_validate_pwun()
+    cleaned up Countdown() a bit: simplified some innerHTML values.
+    Cancel_Submit_buttons(): [Cancel] now has default focus.
+    
+    Tweaked message_box_contents css.
+
+commit 7af105163931bbd85d2358502265e446f6e1975b
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Mar 8 19:46:00 2014 -0500
+
+    Version 3.5.04
+    Updated readme.
+
 commit 649ffbf1988ccb53727be524250725d39f1e7d28
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Sat Mar 8 18:45:00 2014 -0500
