@@ -1,3 +1,23 @@
+commit 649ffbf1988ccb53727be524250725d39f1e7d28
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Mar 8 18:45:00 2014 -0500
+
+    Version 3.5.04
+    Moved php version check into System_Setup()
+    Moved three functions from before, to after, Default_Langauge():
+     validate_units(), hsc(), Convert_encoding()
+    Current_Path_Header() tweaks: removed focus & tweaked css. added hsc()...
+    Index_age_button_top(): To preserve spacing, echo <div id=mcd_submit> & </div>
+      even if $file_count == 0
+    Edit_Page_Form(): uncommented an <input> commented out in 3.5.02.
+    CRM_Page() & MCD_Page(): removed <input name=base_location value=$ACCESS_ROOT>
+    Respond_to_POST(): replaced $POST["base_location"] directly with $ACCESS_ROOT
+    Moved the js functions Select_All() & Confirm_Submit()
+       from common_scripts() to Index_Page_scripts()
+    In hs function Build_Directory():
+        Added filename to "tool tip" of file names in directory listing
+    Some CSS shuffling & tweaks.
+
 commit 1ca2639c346cc288c2c2f302d53ad5baeb44c33e
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Thu Mar 6 15:20:00 2014 -0500
