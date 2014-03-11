@@ -1,5 +1,11 @@
 <h1>OneFileCMS Change Log</h1>
 
+<h3>v3.5.06 (2014-03-11)</h3>
+
+<ul>
+<li>Added optional logging of login attempts, both successful &amp; failed.</li>
+</ul>
+
 <h3>v3.5.05 (2014-03-09)</h3>
 
 <ul>
@@ -36,7 +42,7 @@
 <ul>
 <li>Mostly behind the scenes stuff...</li>
 <li>Replaced use of htmlentities() with htmlspecialchars().  With UTF-8, htmlentites() is superfluous.</li>
-<li>Added hsc() to s number of strings where should have already been.</li>
+<li>Added hsc() to a number of strings where should have already been.</li>
 <li>Changed directory sort function a bit. Note: when selecting/deselecting the 'folders first' option, the primary sort will be the last sorted column.</li>
 <li>Split out a new function, Send_data_to_js(), from Index_Page().</li>
 <li>Also, in prep for an upcoming update, tagged several places (with //##### ) where file system calls are made. The $filename strings used in the calls may need to be encoded with something other than UTF-8, depending on the underlying OS's filesystem. (such as NTFS, which uses UTF-16)</li>

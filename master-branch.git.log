@@ -1,3 +1,21 @@
+commit b5776ac869b91105e19644d58e41c9aed71986d0
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Tue Mar 11 01:33:00 2014 -0400
+
+    Version 3.5.06
+    Login_response(): Log each login attempt (failed & successful).
+    $LOG_LOGINS Config option (true/false)
+    System_Setup(): added $LOGIN_LOG_url, $LOGIN_LOG_file
+    System_Setup(): to prevent execution of old backup files, changed the extension
+       added from .BACKUP.php to -BACKUP.txt
+    Admin_Page(): split out List_Backups_and_Logs(). Also, stay in php and echo
+     everything, instead of jumping in & out of <?php ?>.
+    Renamed List_Backup() to List_File()
+    List_File(): Improved display of listed backups & [Delete] button.
+    Moved scandir() from Get_Directory_Data() to Index_Page() for possible future
+     enhancements.
+    And, you know, a couple css tweaks.
+
 commit d3befc72a2dddf805380c52b3c3ce0ae9fd86133
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Sun Mar 9 12:10:00 2014 -0400
