@@ -1,3 +1,42 @@
+commit ce093e1659e18b934f997043f23aed5275088485
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Tue Mar 18 12:10:00 2014 -0400
+
+    Version 3.5.07
+    Added raw_view to $VALID_PAGES
+    Added [View Raw] button to edit page
+    Added $_['cancelled'], $_['View'], $_['View_Raw'], $_['edit_txt_00']
+     (shuffled a couple other $_[] lines around)
+    Changed $_['too_large_to_view_02'], $_['edit_caution_02'], $_['admin_txt_16']
+    Removed $_['edit_note_04'] - resolved the issue it describes.
+    Replaced global $Editing_OFCMS with $IS_OFCMS
+      Affected:  Validate_params(), Verify_Page_Conditions(), Edit_Page_buttons()
+    Added $GET['m'] so messages can be passed between pages.
+    Initialize $message on line 1 so it can be used anywhere.
+    Verify_Page_Conditions(): added action for raw_view "page".
+    Cencel_Submit_Buttons(): added "cancelled" response message to [Cancel] button
+    Removed ability to edit active copy of OnefileCMS. If needed, make & edit a copy.
+     (Can still view it.)
+    From CRM_Page, removed (don't remember why it's there...):
+      <script>var $new_name = document.getElementById('new_name');</script>
+    Converted from php message_box() to (new) javascript Display_Messages()
+    As only used in HTML output, changed use of PHP_EOL to "\n"
+    Removed class="icon" from SVG icons
+    Renamed event_scripts() to pwun_event_scripts()
+    Edit_Page_buttons_top(): Added [View Raw]
+    Edit_Page_form(): always load Edit_Page_scripts()
+    New: RCD_button(), in Edit_Page_buttons() only
+    Some restructuring & improvements to Edit_Page_form() & Edit_Page().
+    Assemble_row(): made some var's local
+    Build_Directory(): slight streamlining
+    Edit_Page_scripts(): added some onclick events in lieu of html attrib onclicks.
+      Also added & shuffled some logic to fix edit page issues with Chrome.
+    Tweaked/adjusted some css
+    In Main Logic section, slight shuffle of some code to improve readability.
+    Renamed $EDIT_MODE to $EDIT_WYSIWYG
+    Renamed 'edit_mode' cookie to 'edit_wysiwyg'
+    Significant restructure & cleanup of Edit_Page_scripts()
+
 commit b5776ac869b91105e19644d58e41c9aed71986d0
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Tue Mar 11 01:33:00 2014 -0400
