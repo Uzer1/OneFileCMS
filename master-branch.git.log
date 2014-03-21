@@ -1,3 +1,24 @@
+commit d01d963c8e252cf04940b1749d5d20e853dc5d61
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Fri Mar 21 14:00:00 2014 -0400
+
+    Version 3.5.08
+    Removed "cancelled" $message from Cancel_Submit_Buttons()
+    Create_Table_for_Listing(): removed onclicks from html attribs.
+    New: Index_Page_onclicks() assigns onclicks for Create_Table_for_Listing().
+      ( Called at end of Index_Page() )
+    Edit_Page_buttons(): removed some unused global references.
+    FileTimeStamp(): localized a couple variables.
+    Assemble_row(): some minor css cleanup & var renames
+    Build_Directory(): Some general variable usage/readability improvments.
+
+commit c5587981a5c537aee04b24a2085eb84d36919071
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Tue Mar 18 12:52:00 2014 -0400
+
+    Version 3.5.07
+    Just removed some developemental comments so version shows in header.
+
 commit ce093e1659e18b934f997043f23aed5275088485
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Tue Mar 18 12:10:00 2014 -0400
