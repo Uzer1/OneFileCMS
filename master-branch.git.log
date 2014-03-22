@@ -1,3 +1,25 @@
+commit 12c70c6c0989ff8f273ff525bf544250651cd1b0
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Mar 22 18:13:00 2014 -0400
+
+    Version 3.5.09
+    Deleted superfluous file.
+
+commit f034a787afc27ce4eefa8bf4e50e828df6aaa18d
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Mar 22 18:10:00 2014 -0400
+
+    Version 3.5.09
+    Restored IE 8+ support!
+    Create_Table_for_Listing: id=DIRECTORY_FOOTER moved from <TR> to <TD>
+    Send_data_to_js_and_display: added DIRECTORY_ITEMS js global var
+    Added Init_Dir_table_rows() js function.
+    Assemble_row() is now Assemble_Insert_row()
+    Build_Directory() redone for Assemble_Insert_row(), cleaned up.
+    Directory_Summary(): no longer genrerates <td></td> here.
+    Sort_and_Show(): minor adjustment for new Build_Directory().
+    Some css adjustments for the above, and some general tweaks.
+
 commit d01d963c8e252cf04940b1749d5d20e853dc5d61
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Fri Mar 21 14:00:00 2014 -0400
