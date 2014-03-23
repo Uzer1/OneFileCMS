@@ -1,3 +1,19 @@
+commit 2e1067094e0386865ab76531c727c105e4e5ad3b
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sun Mar 23 12:00:00 2014 -0400
+
+    Version 3.5.10
+    Just a quick minor fix: Forgot to rawurlencode the $filename in the
+    onclick_params in the edit page scripts.
+    Some minor readme updates.
+
+commit 8898e29fdf9f657c5e094874db48d50783fb7471
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sat Mar 22 18:25:00 2014 -0400
+
+    Version 3.5.09
+    Updated Optional external style sheet.
+
 commit 12c70c6c0989ff8f273ff525bf544250651cd1b0
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Sat Mar 22 18:13:00 2014 -0400
