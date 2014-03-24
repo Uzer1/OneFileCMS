@@ -1,3 +1,17 @@
+commit 445e0c617971c53f45a555a96fa22eda94360906
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Mon Mar 24 13:00:00 2014 -0400
+
+    Version 3.5.11
+    Removed '!' from the  $_['save_2'] value in language files.
+    X_box is now <button> instead of <a>
+    Display_Messages(): sets new focus when X_box is clicked.
+    When dir list is re-sorted by name, size, etc, focus returns to that option.
+    Sort_and_Show(): Added "Working..." message while sorting & dispaying directory.
+    Gave #message_box a min height on all pages for visual consistancy and so pages
+      don't jump as much when #message_box is closed.
+    Some minor readme updates.
+
 commit 2e1067094e0386865ab76531c727c105e4e5ad3b
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Sun Mar 23 12:00:00 2014 -0400
