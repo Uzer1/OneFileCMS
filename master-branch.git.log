@@ -1,3 +1,20 @@
+commit e05ee57bb3f4e483f5569828c0cf6eb38e9ce4f3
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Tue Mar 25 18:17:16 2014 -0400
+
+    Version 3.5.12
+    Fixed a minor bug with Login screen & countdown timer...
+    Adjusted how countdown timers are placed and called. Functions affected:
+      Timeout_Timer(), Login_response(), Countdown(), Start_Countdown(), and some
+      misc code at end of file.
+    Added $LOGIN_DELAYED global due to above.
+    Countdown(): Added countdown to the 2-minute "Warning!" message box.
+    Improved Display_Messages()
+    Added a few php global variables for values that were otherwise hardcoded in js.
+      These variables are declared in System_Setup():
+      $DELAY_Expired_Reload, $DELAY_Sort_and_Show_msgs, $DELAY_Timeout_Timer, $DELAY_final_messages
+    Some minor readme updates.
+
 commit 445e0c617971c53f45a555a96fa22eda94360906
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Mon Mar 24 13:00:00 2014 -0400
