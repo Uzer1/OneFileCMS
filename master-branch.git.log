@@ -1,3 +1,23 @@
+commit b30329a005810e9ca12a480b9a0162010dc50fa2
+Author: Self-Evident <selfevidenttruths@mail.com>
+Date:   Sun Mar 30 00:00:00 2014 -0400
+
+    Version 3.5.13
+    Added basic keyboard navigation of Index page. (Arrow keys, Page Up/Down, etc.)
+    System_Setup(): made $DOC_ROOT_OS global.
+    Put tabindex=-1 on main OneFileCMS logo.
+    Create_Table_for_Listing(): added "../" to top of directory listing.
+    Edit_Page_buttons_top(): [View Raw] on shows if text_editable.
+    Edit_Page_scripts(): check if [View Raw] exists...
+      Also removed some old leftover test code...
+    Renamed Index_Page_onclicks() to Index_Page_event().
+    Added document.onkeydown function for basic keyboard nav of directory list.
+    Assemble_Insert_row()): added id's to move/copy/delete options as part of
+      arrow key navivation of directory listing.
+    Build_Directory(): Same to <a> for filename.
+    On file change, stopped changing <textarea> border color to red.
+    Some css tweakin' & cleanup
+
 commit 5d51a50148a2be1c819dacba929bdfa9805ae667
 Author: Self-Evident <selfevidenttruths@mail.com>
 Date:   Tue Mar 25 20:20:00 2014 -0400
